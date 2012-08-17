@@ -7,6 +7,14 @@ namespace MenuDirect
 {
     class Item
     {
+        public void AddItem()
+        {
 
+        }
+
+        public void Deleteitem()
+        {
+
+        }
     }
 }
