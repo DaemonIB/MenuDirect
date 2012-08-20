@@ -1,0 +1,5 @@
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\MenuDirect\bin\Debug\MenuDirect.exe
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\MenuDirect\bin\Debug\MenuDirect.pdb
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\MenuDirect\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\MenuDirect\obj\x86\Debug\MenuDirect.exe
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\MenuDirect\obj\x86\Debug\MenuDirect.pdb

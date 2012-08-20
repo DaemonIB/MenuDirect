@@ -7,9 +7,39 @@ namespace MenuDirect
 {
     class MenuDirect
     {
+        static List<Order> orders = new List<Order>();
+
         static void Main(string[] args)
         {
+            CheckAdmin();
+        }
 
+        static void CheckAdmin()
+        {
+            Console.WriteLine("Press A if your an Admin. Press E if your an Employee");
+            char ui = Console.ReadKey(true).KeyChar;
+
+            if (ui == 'a')
+            {
+                Admin admin = new Admin();
+            }
+            else if(ui == 'e')
+            {
+                MakeOrder();
+            }
+            CheckAdmin();
+        }
+
+        static void MakeOrder()
+        {
+            Console.WriteLine("Press Y to make an order.");
+            char ui = Console.ReadKey(true).KeyChar;
+
+            if (ui == 'y')
+            {
+                Order myOrder = new Order();
+                orders.Add(myOrder);
+            }
         }
     }
 }
