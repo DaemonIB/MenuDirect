@@ -1,0 +1,13 @@
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.pdb

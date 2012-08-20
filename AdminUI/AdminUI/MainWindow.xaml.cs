@@ -23,5 +23,24 @@ namespace AdminUI
         {
             InitializeComponent();
         }
+
+        private void addItemButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deleteItemButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void updateItemButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void updatePricesButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
