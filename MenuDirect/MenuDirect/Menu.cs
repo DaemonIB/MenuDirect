@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace MenuDirect
 {
     class Menu
     {
-        public List<String> itemsOnMenu = new List<String>();
+        public List<Item> itemsOnMenu = new List<Item>();
         public String menuFileLocation { get; set; }
         public bool _isAdding { get; set; }
         public bool _isDeleting { get; set; }
@@ -43,6 +44,7 @@ namespace MenuDirect
 
                 foreach (String line in file)
                 {
+                    
                     itemsOnMenu.Add(line);
                 }
 
@@ -78,7 +80,7 @@ namespace MenuDirect
 
         public void AddToMenu()
         {
-            itemsOnMenu.Add(_item.ToString());
+            itemsOnMenu.Add(_item);
         }
 
         public void DeleteFromMenu()
@@ -100,7 +102,7 @@ namespace MenuDirect
         {
             System.IO.TextWriter tw = new System.IO.StreamWriter(menuFileLocation);
 
-            foreach (String items in itemsOnMenu)
+            foreach (Item items in itemsOnMenu)
             {
                 tw.WriteLine(items);
             }
@@ -114,7 +116,7 @@ namespace MenuDirect
             itemsOnMenu.Sort();
             int counter = 0;
 
-            foreach (String fromMenu in itemsOnMenu)
+            foreach (Item fromMenu in itemsOnMenu)
             {
                 Console.WriteLine(counter + " - " + fromMenu);
                 counter++;

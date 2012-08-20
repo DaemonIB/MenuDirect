@@ -71,11 +71,34 @@ namespace AdminTests
         [DeploymentItem("MenuDirect.exe")]
         public void GetAdminInputTest()
         {
-            Admin_Accessor target = new Admin_Accessor(); // TODO: Initialize to an appropriate value
-            InvalidOperationException expected = InvalidOperationException; // TODO: Initialize to an appropriate value
-            string actual;
-            actual = target.GetAdminInput();
+            MenuDirect.Admin target = new MenuDirect.Admin(); // TODO: Initialize to an appropriate value
+            String expected = "2"; // TODO: Initialize to an appropriate value
+            String actual;
+            actual = target.GetAdminInput("2");
             Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        ///A test for PrintAdminChoices
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("MenuDirect.exe")]
+        public void PrintAdminChoicesTest()
+        {
+            Admin_Accessor target = new Admin_Accessor(); // TODO: Initialize to an appropriate value
+            target.PrintAdminChoices();
+            Assert.Inconclusive();
+        }
+
+        /// <summary>
+        ///A test for GetAdminChoice
+        ///</summary>
+        [TestMethod()]
+        public void GetAdminChoiceTest()
+        {
+            Admin target = new Admin(); // TODO: Initialize to an appropriate value
+            char adminChoice = '\0'; // TODO: Initialize to an appropriate value
+            target.GetAdminChoice(adminChoice);
         }
     }
 }

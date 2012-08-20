@@ -10,7 +10,7 @@ namespace MenuDirect
         public int orderNumber { get; set; }
         public double orderTotal { get; set; }
         public int convertedUserInput { get; set; }
-        List<String> order = new List<String>();
+        List<Item> order = new List<Item>();
         Menu menu = new Menu(false, false);
 
         public Order()
@@ -30,7 +30,7 @@ namespace MenuDirect
         {
             Console.WriteLine("Press A to add an item. Press D to delete an item. Press C to confirm this order.");
             char ui = Console.ReadKey(true).KeyChar;
-
+            
             if (ui == 'a')
             {
                 AddItemOrder();

@@ -7,6 +7,7 @@ namespace MenuDirect
 {
     class MenuDirect
     {
+
         static List<Order> orders = new List<Order>();
 
         static void Main(string[] args)
