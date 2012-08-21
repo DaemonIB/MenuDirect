@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Diagnostics;
 
 namespace MenuDirect
 {
@@ -16,21 +17,36 @@ namespace MenuDirect
         {
         }
 
-        public void SerializeObject(string filename, Item itemToSerialize)
+        public void SerializeObject(string filename, List<Item> itemToSerialize)
         {
+            Process process = Process.Start("notepad.exe");
+            // Wait one second.
+            System.Threading.Thread.Sleep(1000);
+            // End notepad.
+            process.Kill();
+
             Stream stream = File.Open(filename, FileMode.Create);
             BinaryFormatter bFormatter = new BinaryFormatter();
             bFormatter.Serialize(stream, itemToSerialize);
+            stream.Flush();
             stream.Close();
+            stream.Dispose();
         }
 
-        public Item DeSerializeObject(string filename)
+        public List<Item> DeSerializeObject(string filename)
         {
-            Item itemToSerialize;
+            if (!System.IO.File.Exists(filename))
+            {
+                System.IO.FileStream f = System.IO.File.Create(filename);
+                f.Close();
+            }
+            List<Item> itemToSerialize;
             Stream stream = File.Open(filename, FileMode.Open);
             BinaryFormatter bFormatter = new BinaryFormatter();
-            itemToSerialize = (Item)bFormatter.Deserialize(stream);
+            itemToSerialize = (List<Item>)bFormatter.Deserialize(stream);
+            stream.Flush();
             stream.Close();
+            stream.Dispose();
             return itemToSerialize;
         }
     }

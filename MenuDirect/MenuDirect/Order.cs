@@ -75,7 +75,7 @@ namespace MenuDirect
         public void GetItemNumbers()
         {
             int counter = 0;
-            foreach (String item in menu.itemsOnMenu)
+            foreach (Item item in menu.itemsOnMenu)
             {
                 Console.WriteLine(counter + " - " + item);
                 counter++;
@@ -110,7 +110,7 @@ namespace MenuDirect
 
         public void PrintOrder()
         {
-            foreach (String ordered in order)
+            foreach (Item ordered in order)
             {
                 Console.WriteLine(ordered);
             }
@@ -141,11 +141,9 @@ namespace MenuDirect
 
         public void CalculateTotal()
         {
-            foreach (String price in order)
+            foreach (Item price in order)
             {
-                string[] stringSplit = price.Split(' ');
-                double convertedToPrice = Convert.ToDouble(stringSplit[stringSplit.Count() - 1]);
-                orderTotal += convertedToPrice;
+                orderTotal += price._itemPrice;
             }
             Console.WriteLine("Total: $" + orderTotal);
         }

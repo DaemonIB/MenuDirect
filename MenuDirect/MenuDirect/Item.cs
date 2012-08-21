@@ -9,7 +9,7 @@ namespace MenuDirect
 {
     [Serializable()]
 
-    class Item : ISerializable
+    public class Item : ISerializable
     {
         public String _itemName { get; set; }
         public double _itemPrice { get; set; }
@@ -22,19 +22,24 @@ namespace MenuDirect
 
         public Item(SerializationInfo info, StreamingContext ctxt)
    {
-      _itemname = (string)info.GetValue("Item Name", typeof(string));
-      this.model = (string)info.GetValue("Model",typeof(string));
+      _itemName = (string)info.GetValue("Item Name", typeof(string));
+      _itemPrice = (double)info.GetValue("Item Price",typeof(double));
    }
 
    public void GetItemData(SerializationInfo info, StreamingContext ctxt)
    {
-      info.AddValue("Make", this.make);
-      info.AddValue("Model", this.model);
+      info.AddValue("Item Name", _itemName);
+      info.AddValue("Item Price", _itemPrice);
    }
 
         public override string ToString()
         {
             return "Item Name: " + _itemName + "     Item Price: " + _itemPrice;
+        }
+
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            throw new NotImplementedException();
         }
     }
 }

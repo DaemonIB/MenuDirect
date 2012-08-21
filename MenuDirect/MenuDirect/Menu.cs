@@ -13,6 +13,7 @@ namespace MenuDirect
         public bool _isAdding { get; set; }
         public bool _isDeleting { get; set; }
         public Item _item { get; set; }
+        Serializer serializer = new Serializer();
 
         public Menu(Item item, bool isAdding, bool isDeleting)
         {
@@ -42,11 +43,7 @@ namespace MenuDirect
 
                 var file = System.IO.File.ReadLines(menuFileLocation);
 
-                foreach (String line in file)
-                {
-                    
-                    itemsOnMenu.Add(line);
-                }
+                    itemsOnMenu = serializer.DeSerializeObject(menuFileLocation);;
 
                 sr.Dispose();
                 sr.Close();
@@ -102,11 +99,9 @@ namespace MenuDirect
         {
             System.IO.TextWriter tw = new System.IO.StreamWriter(menuFileLocation);
 
-            foreach (Item items in itemsOnMenu)
-            {
-                tw.WriteLine(items);
-            }
-
+                serializer.SerializeObject(menuFileLocation, itemsOnMenu);
+                
+            
             tw.Flush();
             tw.Close();
         }
