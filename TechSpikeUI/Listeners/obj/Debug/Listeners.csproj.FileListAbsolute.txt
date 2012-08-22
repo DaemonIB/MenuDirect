@@ -1,0 +1,5 @@
+C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\Listeners\bin\Debug\Listeners.dll
+C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\Listeners\bin\Debug\Listeners.pdb
+C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\Listeners\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\Listeners\obj\Debug\Listeners.dll
+C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\Listeners\obj\Debug\Listeners.pdb
