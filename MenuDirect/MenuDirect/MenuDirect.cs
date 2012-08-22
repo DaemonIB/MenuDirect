@@ -10,6 +10,8 @@ namespace MenuDirect
 
         static List<Order> orders = new List<Order>();
 
+        static Menu menu = new Menu();
+
         static void Main(string[] args)
         {
             CheckAdmin();
@@ -22,7 +24,7 @@ namespace MenuDirect
 
             if (ui == 'a')
             {
-                Admin admin = new Admin();
+                Admin admin = new Admin(menu);
             }
             else if(ui == 'e')
             {
@@ -38,7 +40,7 @@ namespace MenuDirect
 
             if (ui == 'y')
             {
-                Order myOrder = new Order();
+                Order myOrder = new Order(menu);
                 orders.Add(myOrder);
             }
         }

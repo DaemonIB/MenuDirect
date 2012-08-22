@@ -7,12 +7,13 @@ namespace MenuDirect
 {
     public class Admin
     {
-
         public String adminInput { get; set; }
         public char adminChoice { get; set; }
+        public Menu menu { get; set; }
 
-        public Admin()
+        public Admin(Menu menu)
         {
+            this.menu = menu;
             PrintAdminChoices();
             GetAdminChoice(adminChoice = Console.ReadKey(true).KeyChar);
         }
@@ -46,9 +47,9 @@ namespace MenuDirect
             double newItemPrice = Convert.ToDouble(Console.ReadLine());
 
             Item item = new Item(newItemName, newItemPrice);
-            
-            Menu menu = new Menu(item, true, false);
 
+            menu.AddToMenu(item);
+            
             Console.WriteLine(Environment.NewLine);
         }
 
@@ -59,7 +60,7 @@ namespace MenuDirect
         
         public void DeleteItemFromMenu()
         {
-            Menu menu = new Menu(new Item("", 6), false, true);
+            menu.DeleteFromMenu();
         }
     }
 }

@@ -11,10 +11,11 @@ namespace MenuDirect
         public double orderTotal { get; set; }
         public int convertedUserInput { get; set; }
         List<Item> order = new List<Item>();
-        Menu menu = new Menu(false, false);
+        public Menu menu { get; set; }
 
-        public Order()
+        public Order(Menu menu)
         {
+            this.menu = menu;
             GetOrderNumber();
             GetOrderOptions();
         }
@@ -66,7 +67,7 @@ namespace MenuDirect
             catch (Exception e)
             {
                 Console.WriteLine("You entered an invalid order number.");
-                Order ordered = new Order();
+                Order ordered = new Order(menu);
             }
 
             return convertedUserInput;
@@ -75,7 +76,7 @@ namespace MenuDirect
         public void GetItemNumbers()
         {
             int counter = 0;
-            foreach (Item item in menu.itemsOnMenu)
+            foreach (Item item in menu.GetMenu().itemsOnMenu)
             {
                 Console.WriteLine(counter + " - " + item);
                 counter++;

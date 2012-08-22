@@ -19,11 +19,11 @@ namespace MenuDirect
 
         public void SerializeObject(string filename, List<Item> itemToSerialize)
         {
-            Process process = Process.Start("notepad.exe");
+            Process process2 = Process.Start("C://Temp/MenuDirect.txt");
             // Wait one second.
             System.Threading.Thread.Sleep(1000);
             // End notepad.
-            process.Kill();
+            process2.Kill();
 
             Stream stream = File.Open(filename, FileMode.Create);
             BinaryFormatter bFormatter = new BinaryFormatter();
@@ -35,11 +35,12 @@ namespace MenuDirect
 
         public List<Item> DeSerializeObject(string filename)
         {
-            if (!System.IO.File.Exists(filename))
-            {
-                System.IO.FileStream f = System.IO.File.Create(filename);
-                f.Close();
-            }
+            Process process2 = Process.Start("C://Temp/MenuDirect.txt");
+            // Wait one second.
+            System.Threading.Thread.Sleep(1000);
+            // End notepad.
+            process2.Kill();
+
             List<Item> itemToSerialize;
             Stream stream = File.Open(filename, FileMode.Open);
             BinaryFormatter bFormatter = new BinaryFormatter();

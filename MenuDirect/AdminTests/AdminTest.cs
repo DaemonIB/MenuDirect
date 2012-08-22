@@ -71,7 +71,8 @@ namespace AdminTests
         [DeploymentItem("MenuDirect.exe")]
         public void GetAdminInputTest()
         {
-            MenuDirect.Admin target = new MenuDirect.Admin(); // TODO: Initialize to an appropriate value
+            Menu menu = new Menu();
+            MenuDirect.Admin target = new MenuDirect.Admin(menu); // TODO: Initialize to an appropriate value
             String expected = "2"; // TODO: Initialize to an appropriate value
             String actual;
             actual = target.GetAdminInput("2");
@@ -85,7 +86,8 @@ namespace AdminTests
         [DeploymentItem("MenuDirect.exe")]
         public void PrintAdminChoicesTest()
         {
-            Admin_Accessor target = new Admin_Accessor(); // TODO: Initialize to an appropriate value
+            Menu menu = new Menu();
+            Admin_Accessor target = new Admin_Accessor(menu); // TODO: Initialize to an appropriate value
             target.PrintAdminChoices();
             Assert.Inconclusive();
         }
@@ -96,7 +98,8 @@ namespace AdminTests
         [TestMethod()]
         public void GetAdminChoiceTest()
         {
-            Admin target = new Admin(); // TODO: Initialize to an appropriate value
+            Menu menu = new Menu();
+            Admin target = new Admin(menu); // TODO: Initialize to an appropriate value
             char adminChoice = '\0'; // TODO: Initialize to an appropriate value
             target.GetAdminChoice(adminChoice);
         }
