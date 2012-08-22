@@ -26,3 +26,5 @@ C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\TechSpikeUI\obj\x86\D
 C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\TechSpikeUI\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\TechSpikeUI\bin\Debug\Listeners.dll
 C:\Users\nnickerson\Desktop\C#Menu\TechSpikeUI\TechSpikeUI\TechSpikeUI\bin\Debug\Listeners.pdb
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\TechSpikeUI\TechSpikeUI\obj\x86\Debug\TechSpikeUI.exe
+C:\Users\nnickerson\Documents\GitHub\MenuDirect\TechSpikeUI\TechSpikeUI\obj\x86\Debug\TechSpikeUI.pdb
