@@ -1,0 +1,26 @@
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\bin\Debug\CookUI.exe
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\bin\Debug\CookUI.pdb
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\CookUI_MarkupCompile.cache
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\CookUI.g.resources
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\CookUI.Properties.Resources.resources
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\CookUI.exe
+C:\Users\trice\Documents\QUARTER 4\NET Project\CookUI\CookUI\obj\x86\Debug\CookUI.pdb
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\bin\Debug\CookUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\bin\Debug\CookUI.pdb
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\CookUI_MarkupCompile.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\CookUI.g.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\CookUI.Properties.Resources.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\CookUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\CookUI\CookUI\obj\x86\Debug\CookUI.pdb

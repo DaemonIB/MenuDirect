@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MenuDirectModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="MenuDirectModel1StoreContainer">
+          <EntitySet Name="Category" EntityType="MenuDirectModel1.Store.Category" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="order" EntityType="MenuDirectModel1.Store.order" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="orderList" EntityType="MenuDirectModel1.Store.orderList" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="product" EntityType="MenuDirectModel1.Store.product" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="orderNumber" Association="MenuDirectModel1.Store.orderNumber">
+            <End Role="order" EntitySet="order" />
+            <End Role="orderList" EntitySet="orderList" />
+          </AssociationSet>
+          <AssociationSet Name="prodID" Association="MenuDirectModel1.Store.prodID">
+            <End Role="product" EntitySet="product" />
+            <End Role="orderList" EntitySet="orderList" />
+          </AssociationSet>
+          <AssociationSet Name="productCategoryName" Association="MenuDirectModel1.Store.productCategoryName">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="product" EntitySet="product" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="categoryName" />
+          </Key>
+          <Property Name="categoryName" Type="varchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="order">
+          <Key>
+            <PropertyRef Name="orderNumber" />
+          </Key>
+          <Property Name="orderNumber" Type="int" Nullable="false" />
+          <Property Name="orderDelivered" Type="bit" />
+          <Property Name="cookingCompleted" Type="bit" />
+        </EntityType>
+        <EntityType Name="orderList">
+          <Key>
+            <PropertyRef Name="orderLIstID" />
+          </Key>
+          <Property Name="orderLIstID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="prodID" Type="int" Nullable="false" />
+          <Property Name="orderNumber" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="prodID" />
+          </Key>
+          <Property Name="prodID" Type="int" Nullable="false" />
+          <Property Name="prodName" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="prodPrice" Type="decimal" Nullable="false" Scale="2" />
+          <Property Name="prodCategoryName" Type="varchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <Association Name="orderNumber">
+          <End Role="order" Type="MenuDirectModel1.Store.order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="orderList" Type="MenuDirectModel1.Store.orderList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="order">
+              <PropertyRef Name="orderNumber" />
+            </Principal>
+            <Dependent Role="orderList">
+              <PropertyRef Name="orderNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="prodID">
+          <End Role="product" Type="MenuDirectModel1.Store.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="orderList" Type="MenuDirectModel1.Store.orderList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="prodID" />
+            </Principal>
+            <Dependent Role="orderList">
+              <PropertyRef Name="prodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="productCategoryName">
+          <End Role="Category" Type="MenuDirectModel1.Store.Category" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="product" Type="MenuDirectModel1.Store.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="categoryName" />
+            </Principal>
+            <Dependent Role="product">
+              <PropertyRef Name="prodCategoryName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MenuDirectModel1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="MenuDirectEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categories" EntityType="MenuDirectModel1.Category" />
+          <EntitySet Name="orders" EntityType="MenuDirectModel1.order" />
+          <EntitySet Name="orderLists" EntityType="MenuDirectModel1.orderList" />
+          <EntitySet Name="products" EntityType="MenuDirectModel1.product" />
+          <AssociationSet Name="productCategoryName" Association="MenuDirectModel1.productCategoryName">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="product" EntitySet="products" />
+          </AssociationSet>
+          <AssociationSet Name="orderNumber" Association="MenuDirectModel1.orderNumber">
+            <End Role="order" EntitySet="orders" />
+            <End Role="orderList" EntitySet="orderLists" />
+          </AssociationSet>
+          <AssociationSet Name="prodID" Association="MenuDirectModel1.prodID">
+            <End Role="product" EntitySet="products" />
+            <End Role="orderList" EntitySet="orderLists" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="categoryName" />
+          </Key>
+          <Property Name="categoryName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="products" Relationship="MenuDirectModel1.productCategoryName" FromRole="Category" ToRole="product" />
+        </EntityType>
+        <EntityType Name="order">
+          <Key>
+            <PropertyRef Name="orderNumber" />
+          </Key>
+          <Property Name="orderNumber" Type="Int32" Nullable="false" />
+          <Property Name="orderDelivered" Type="Boolean" />
+          <Property Name="cookingCompleted" Type="Boolean" />
+          <NavigationProperty Name="orderLists" Relationship="MenuDirectModel1.orderNumber" FromRole="order" ToRole="orderList" />
+        </EntityType>
+        <EntityType Name="orderList">
+          <Key>
+            <PropertyRef Name="orderLIstID" />
+          </Key>
+          <Property Name="orderLIstID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="prodID" Type="Int32" Nullable="false" />
+          <Property Name="orderNumber" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="order" Relationship="MenuDirectModel1.orderNumber" FromRole="orderList" ToRole="order" />
+          <NavigationProperty Name="product" Relationship="MenuDirectModel1.prodID" FromRole="orderList" ToRole="product" />
+        </EntityType>
+        <EntityType Name="product">
+          <Key>
+            <PropertyRef Name="prodID" />
+          </Key>
+          <Property Name="prodID" Type="Int32" Nullable="false" />
+          <Property Name="prodName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="prodPrice" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+          <Property Name="prodCategoryName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Category" Relationship="MenuDirectModel1.productCategoryName" FromRole="product" ToRole="Category" />
+          <NavigationProperty Name="orderLists" Relationship="MenuDirectModel1.prodID" FromRole="product" ToRole="orderList" />
+        </EntityType>
+        <Association Name="productCategoryName">
+          <End Role="Category" Type="MenuDirectModel1.Category" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="product" Type="MenuDirectModel1.product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="categoryName" />
+            </Principal>
+            <Dependent Role="product">
+              <PropertyRef Name="prodCategoryName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="orderNumber">
+          <End Role="order" Type="MenuDirectModel1.order" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="orderList" Type="MenuDirectModel1.orderList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="order">
+              <PropertyRef Name="orderNumber" />
+            </Principal>
+            <Dependent Role="orderList">
+              <PropertyRef Name="orderNumber" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="prodID">
+          <End Role="product" Type="MenuDirectModel1.product" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="orderList" Type="MenuDirectModel1.orderList" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="product">
+              <PropertyRef Name="prodID" />
+            </Principal>
+            <Dependent Role="orderList">
+              <PropertyRef Name="prodID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MenuDirectModel1StoreContainer" CdmEntityContainer="MenuDirectEntities">
+          <EntitySetMapping Name="Categories"><EntityTypeMapping TypeName="MenuDirectModel1.Category"><MappingFragment StoreEntitySet="Category">
+            <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="orders"><EntityTypeMapping TypeName="MenuDirectModel1.order"><MappingFragment StoreEntitySet="order">
+            <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+            <ScalarProperty Name="orderDelivered" ColumnName="orderDelivered" />
+            <ScalarProperty Name="cookingCompleted" ColumnName="cookingCompleted" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="orderLists"><EntityTypeMapping TypeName="MenuDirectModel1.orderList"><MappingFragment StoreEntitySet="orderList">
+            <ScalarProperty Name="orderLIstID" ColumnName="orderLIstID" />
+            <ScalarProperty Name="prodID" ColumnName="prodID" />
+            <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="products"><EntityTypeMapping TypeName="MenuDirectModel1.product"><MappingFragment StoreEntitySet="product">
+            <ScalarProperty Name="prodID" ColumnName="prodID" />
+            <ScalarProperty Name="prodName" ColumnName="prodName" />
+            <ScalarProperty Name="prodPrice" ColumnName="prodPrice" />
+            <ScalarProperty Name="prodCategoryName" ColumnName="prodCategoryName" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model2">
+        <EntityTypeShape EntityType="MenuDirectModel1.Category" Width="1.5" PointX="0.75" PointY="1.375" Height="1.4033821614583335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MenuDirectModel1.order" Width="1.5" PointX="3" PointY="5.125" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="MenuDirectModel1.orderList" Width="1.5" PointX="5.25" PointY="1" Height="1.9802864583333326" IsExpanded="true" />
+        <EntityTypeShape EntityType="MenuDirectModel1.product" Width="1.5" PointX="3" PointY="0.875" Height="2.1725878906249996" IsExpanded="true" />
+        <AssociationConnector Association="MenuDirectModel1.productCategoryName" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.0766910807291667" />
+          <ConnectorPoint PointX="3" PointY="2.0766910807291667" />
+        </AssociationConnector>
+        <AssociationConnector Association="MenuDirectModel1.orderNumber" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.0189925130208337" />
+          <ConnectorPoint PointX="6" PointY="6.0189925130208337" />
+          <ConnectorPoint PointX="6" PointY="2.9802864583333326" />
+        </AssociationConnector>
+        <AssociationConnector Association="MenuDirectModel1.prodID" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="1.9901432291666663" />
+          <ConnectorPoint PointX="5.25" PointY="1.9901432291666663" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

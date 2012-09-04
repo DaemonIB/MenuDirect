@@ -1,9 +1,0 @@
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\AdminTests.dll
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\AdminTests.pdb
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\MenuDirect.exe
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\MenuDirect.pdb
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\MenuDirect_Accessor.exe
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\bin\Debug\MenuDirect_Accessor.pdb
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\obj\Debug\AdminTests.dll
-C:\Users\nnickerson\Documents\GitHub\MenuDirect\MenuDirect\AdminTests\obj\Debug\AdminTests.pdb

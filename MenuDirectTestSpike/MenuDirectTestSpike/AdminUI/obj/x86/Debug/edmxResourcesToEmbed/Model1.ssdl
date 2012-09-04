@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MenuDirectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MenuDirectModelStoreContainer">
+    <EntitySet Name="Category" EntityType="MenuDirectModel.Store.Category" store:Type="Tables" store:Schema="dbo" store:Name="Category">
+      <DefiningQuery>SELECT 
+      [Category].[categoryName] AS [categoryName]
+      FROM [dbo].[Category] AS [Category]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'MenuDirect.dbo.Category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="categoryName" />
+    </Key>
+    <Property Name="categoryName" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'MenuDirect.dbo.order' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="order">
+        <Property Name="orderNumber" Type="varchar" MaxLength="50" />
+        <Property Name="orderDelivered" Type="varchar" MaxLength="50" />
+        <Property Name="cookingCompleted" Type="varchar" MaxLength="50" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'MenuDirect.dbo.orderlist' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="orderlist">
+        <Property Name="orderLIstID" Type="varchar" MaxLength="50" />
+        <Property Name="prodID" Type="varchar" MaxLength="50" />
+        <Property Name="orderNumber" Type="varchar" MaxLength="50" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'MenuDirect.dbo.product' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="product">
+        <Property Name="prodID" Type="varchar" MaxLength="50" />
+        <Property Name="prodName" Type="varchar" MaxLength="50" />
+        <Property Name="prodPrice" Type="varchar" MaxLength="50" />
+        <Property Name="prodCategoryName" Type="varchar" MaxLength="50" />
+      </EntityType>-->
+</Schema>
