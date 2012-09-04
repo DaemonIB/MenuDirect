@@ -24,7 +24,7 @@ namespace MenuDirectTestSpike
         public decimal prodPrice { get; set; }
         public string prodCategoryName { get; set; }
     
-        public virtual ICollection<orderList> orderLists { get; set; }
         public virtual Category Category { get; set; }
+        public virtual ICollection<orderList> orderLists { get; set; }
     }
 }

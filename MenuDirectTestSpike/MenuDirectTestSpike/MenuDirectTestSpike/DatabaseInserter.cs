@@ -9,7 +9,7 @@ namespace MenuDirectTestSpike
     {
         public void EnterItemToDB(String input)
         {
-            using (var db = new MenuDirect())
+            using (var db = new MenuDirectEntities())
             {
                 Random gen = new Random(DateTime.Now.Second);
 

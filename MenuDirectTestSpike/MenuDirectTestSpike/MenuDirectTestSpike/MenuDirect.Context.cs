@@ -13,10 +13,10 @@ namespace MenuDirectTestSpike
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MenuDirect : DbContext
+    public partial class MenuDirectEntities : DbContext
     {
-        public MenuDirect()
-            : base("name=MenuDirect")
+        public MenuDirectEntities()
+            : base("name=MenuDirectEntities")
         {
         }
     

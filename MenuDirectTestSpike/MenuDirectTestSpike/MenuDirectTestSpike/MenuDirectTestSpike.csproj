@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Category.cs">
-      <DependentUpon>MenuDirect.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Chef.cs" />
     <Compile Include="DatabaseInserter.cs" />
@@ -81,35 +81,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MenuDirect.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="MenuDirect.cs">
+    <Compile Include="Model.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MenuDirect.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="MenuDirect.Designer.cs">
+    <Compile Include="Model.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>MenuDirect.edmx</DependentUpon>
+      <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="order.cs">
-      <DependentUpon>MenuDirect.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="orderList.cs">
-      <DependentUpon>MenuDirect.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="ordering.cs" />
     <Compile Include="product.cs">
-      <DependentUpon>MenuDirect.tt</DependentUpon>
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="MenuDirect.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MenuDirect.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
@@ -117,9 +115,13 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>MenuDirect.Context.cs</LastGenOutput>
     </None>
-    <None Include="MenuDirect.tt">
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>MenuDirect.cs</LastGenOutput>
+      <LastGenOutput>Model.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

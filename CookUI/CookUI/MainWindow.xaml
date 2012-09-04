@@ -4,7 +4,7 @@
         Title="Cook" 
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-        ResizeMode="NoResize" WindowState="Maximized">
+        ResizeMode="NoResize" WindowState="Maximized" Loaded="Window_Loaded">
     <ScrollViewer Margin="0,12,12,0" Name="scrollViewer1" Height="1020" VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Auto" 
                        ScrollViewer.HorizontalScrollBarVisibility="Visible">
         <Grid>
@@ -62,10 +62,11 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25"/>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25" Name="OrderNumLabel"/>
                     <Border Grid.Column="2" Grid.Row="1" Margin="50,10,10,380" >
                         <Button Content="DONE" Background="MediumSeaGreen" TextElement.FontSize ="30"/>
                     </Border>
+                    <ListBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Height="407" Margin="6,117,10,0" Name="listBox1" VerticalAlignment="Top" Grid.RowSpan="2" SelectionChanged="listBox1_SelectionChanged" />
                 </Grid>
             </Border>
             <!-- Label 2 -->

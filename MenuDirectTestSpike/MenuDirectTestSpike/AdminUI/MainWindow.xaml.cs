@@ -100,11 +100,50 @@ namespace AdminUI
             AddInput.Visibility = System.Windows.Visibility.Collapsed;
             _currentDataGrid.Visibility = System.Windows.Visibility.Collapsed;
 
-            //String name = nameItemTb.Text;
-            //Decimal price = Convert.ToDecimal(priceItemTB.Text);
-            //String category = categoryBox.Text;
+            String productName = "";
+            Decimal price = 0.00M;
+            String categoryName = "";
 
-            //theSender.SendToDB(new MenuDirectTestSpike.product(name, price, category));
+            for (int i = 0; i < Int64.MaxValue; i++)
+            {
+                TextBlock x = addProductDataGrid.Columns[0].GetCellContent(addProductDataGrid.Items[i]) as TextBlock;
+                if (x != null)
+                    if (!x.Text.Equals(""))
+                    {
+                        Console.WriteLine(x.GetType());
+                        Console.WriteLine("Product " + i + ": " + x.Text);
+                        productName = x.Text;
+                    }
+                    else
+                    {
+                        break;
+                    }
+
+                TextBlock y = addProductDataGrid.Columns[1].GetCellContent(addProductDataGrid.Items[i]) as TextBlock;
+                if (y != null)
+                    if (!y.Text.Equals(""))
+                    {
+                        Console.WriteLine("Price " + i + ": " + y.Text);
+                        price = Convert.ToDecimal(y.Text);
+                    }
+                    else
+                    {
+                        break;
+                    }
+
+                TextBlock z = addProductDataGrid.Columns[2].GetCellContent(addProductDataGrid.Items[i]) as TextBlock;
+                if (z != null)
+                    if (!z.Text.Equals(""))
+                    {
+                        Console.WriteLine("Category " + i + ": " + z.Text);
+                        categoryName = z.Text;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                theSender.SendToDB(new MenuDirectTestSpike.product() { prodName = productName, prodPrice = price, prodCategoryName = categoryName });
+            }
         }
         private void cancelAddButton_Click(object sender, RoutedEventArgs e)
         {

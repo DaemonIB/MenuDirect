@@ -37,3 +37,16 @@ C:\Users\trice\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\Gene
 C:\Users\trice\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\trice\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
 C:\Users\trice\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog

@@ -19,7 +19,7 @@ namespace MenuDirectTestSpike
       */
         public void SendToDB(product item)
         {
-            using (var db = new MenuDirect())
+            using (var db = new MenuDirectEntities())
             {
                 Random gen = new Random(DateTime.Now.Second);
 
@@ -39,7 +39,7 @@ namespace MenuDirectTestSpike
 
         public ObservableCollection<string> getCategoryList()
         {
-            using (var db = new MenuDirect())
+            using (var db = new MenuDirectEntities())
             {
                 foreach (Category theCategory in db.Categories)
                 {

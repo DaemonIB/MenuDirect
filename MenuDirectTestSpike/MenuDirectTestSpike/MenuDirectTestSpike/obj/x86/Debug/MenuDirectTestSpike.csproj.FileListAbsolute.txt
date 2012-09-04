@@ -14,3 +14,11 @@ C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpi
 C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\MenuDirectTestSpike.dll
 C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\MenuDirectTestSpike.pdb
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\bin\Debug\MenuDirectTestSpike.dll.config
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\bin\Debug\MenuDirectTestSpike.dll
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\bin\Debug\MenuDirectTestSpike.pdb
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\bin\Debug\EntityFramework.dll
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\bin\Debug\EntityFramework.xml
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\MenuDirectTestSpike.dll
+C:\Users\nnickerson\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\MenuDirectTestSpike\obj\x86\Debug\MenuDirectTestSpike.pdb

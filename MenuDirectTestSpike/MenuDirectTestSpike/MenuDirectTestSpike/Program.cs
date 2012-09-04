@@ -5,10 +5,11 @@ using System.Text;
 
 namespace MenuDirectTestSpike
 {
-    class Program
+    public class Program
     {
         private static Random _rng = new Random();
         private static string _chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        public static List<Chef> chefsList = new List<Chef>();
 
         public static void Main(String[] args)
         {
