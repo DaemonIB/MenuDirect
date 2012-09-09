@@ -39,6 +39,7 @@
                 <RowDefinition />
                 <RowDefinition />
             </Grid.RowDefinitions>
+            
             <!--Order Label 1-->
             <Border Grid.Column="1" Grid.Row="0" Grid.RowSpan="5">
                 <Grid>
@@ -54,58 +55,20 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="23" />
+                    <Label Name="orderNum1" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Content="123" Margin="10,50,0,50" HorizontalAlignment="Left" VerticalAlignment="Top" TextElement.FontSize ="40"/>
                     <DataGrid AutoGenerateColumns="False" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="3" Margin="10,140,10,10" Name="dataGrid1" 
                                   SelectionChanged="dataGrid1_SelectionChanged" TextElement.FontSize="18">
                         <DataGrid.Columns>
-                            <DataGridTextColumn x:Name="orderProducts" Binding="{Binding}"  Width="430" />
+                            <DataGridTextColumn x:Name="orderProducts1" Binding="{Binding}"  Width="430" />
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25" />
-                    <Border Grid.Column="2" Grid.Row="0" Margin="40,10,10,80">
+                    <Border Grid.Column="2" Grid.Row="0" Margin="0,10,10,80">
                         <Button Content="DONE" Background="MediumSeaGreen"  TextElement.FontSize ="30"/>
                     </Border>
                 </Grid>
             </Border>
-          <!--  <Border Grid.Column="1" Grid.Row="0" Grid.RowSpan="5">
-                <Grid>
-                    <Grid DataContext="{StaticResource productViewSource}">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1"/>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="1"/>
-                        <RowDefinition />
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Content="Order #" Grid.ColumnSpan="3" TextElement.FontSize ="25"/>
-                    <Label Content="{Binding Path=orderNumber}" Grid.Row="0" Grid.Column="1"  Grid.ColumnSpan="3" TextElement.FontSize ="25" Name="orderNumberLabel" Width="50" Height="50"/>
-                    <Border Grid.Column="2" Grid.Row="1" Margin="50,10,10,380">
-                        <Button Content="DONE" Background="MediumSeaGreen" TextElement.FontSize ="30"/>
-                    </Border>
-                    <ListBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Name="listBox1" Grid.RowSpan="3" SelectionChanged="listBox1_SelectionChanged" DisplayMemberPath="prodName">
-                        <ListBox.Background>
-                            <SolidColorBrush />
-                        </ListBox.Background>
-                        <ListBox.BorderBrush>
-                            <SolidColorBrush />
-                        </ListBox.BorderBrush>
-                    </ListBox>
-                    <Grid DataContext="{StaticResource orderViewSource}" Name="grid1" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Grid.RowSpan="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1"/>
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1" />
-                            <RowDefinition Height="981*" />
-                        </Grid.RowDefinitions>
-                        
-                    </Grid>
-                    <Label Content="Order Number:" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="5,40,0,428" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="32"/>
-                </Grid>
-            </Border>-->
+          
             <!-- Label 2 -->
             <Border Grid.Column="2" Grid.Row="0" Grid.RowSpan="5">
                 <Grid>
@@ -115,36 +78,25 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition />
+                        <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25"/>
-                    <Border Grid.Column="2" Grid.Row="1" Margin="50,10,10,380" >
-                        <Button Content="DONE" Background="MediumSeaGreen" TextElement.FontSize ="30"/>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="23"/>
+                    <Label Name="orderNum2" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Content="123" Margin="10,50,0,50" HorizontalAlignment="Left" VerticalAlignment="Top" TextElement.FontSize ="40"/>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="3" Margin="10,140,10,10" Name="dataGrid2" TextElement.FontSize="18">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="orderProducts2" Binding="{Binding}"  Width="430" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Border Grid.Column="2" Grid.Row="0" Margin="0,10,10,80">
+                        <Button Content="DONE" Background="MediumSeaGreen"  TextElement.FontSize ="30"/>
                     </Border>
-                    <!--<Grid DataContext="{StaticResource productViewSource}" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Left" Margin="8,175,0,0" Name="grid2" VerticalAlignment="Top">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="37" />
-                            <ColumnDefinition Width="47" />
-                            <ColumnDefinition Width="113" />
-                            <ColumnDefinition Width="204" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <ListBox DisplayMemberPath="prodName" Height="827" ItemsSource="{Binding}" Margin="0,0,0,-721" Name="prodNameListBox" VerticalAlignment="Center" Width="482" Grid.ColumnSpan="5" FontSize="36" HorizontalAlignment="Left" FontStretch="Normal" SelectionChanged="prodNameListBox_SelectionChanged">
-                            <ListBox.BorderBrush>
-                                <SolidColorBrush />
-                            </ListBox.BorderBrush>
-                            <ListBox.Background>
-                                <SolidColorBrush />
-                            </ListBox.Background>
-                        </ListBox>
-                    </Grid>-->
                 </Grid>
             </Border>
+            
             <!-- Label 3 -->
             <Border Grid.Column="3" Grid.Row="0" Grid.RowSpan="5">
                 <Grid>
@@ -154,16 +106,26 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition />
+                        <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25"/>
-                    <Border Grid.Column="2" Grid.Row="1" Margin="50,10,10,380" >
-                        <Button Content="DONE" Background="MediumSeaGreen" TextElement.FontSize ="30"/>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="23"/>
+                    <Label Name="orderNum3" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Content="123" Margin="10,50,0,50" HorizontalAlignment="Left" VerticalAlignment="Top" TextElement.FontSize ="40"/>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="3" Margin="10,140,10,10" Name="dataGrid3" TextElement.FontSize="18">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="orderProducts3" Binding="{Binding}"  Width="430" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Border Grid.Column="2" Grid.Row="0" Margin="0,10,10,80">
+                        <Button Content="DONE" Background="MediumSeaGreen"  TextElement.FontSize ="30"/>
                     </Border>
                 </Grid>
             </Border>
+
+            <!-- Label 4 -->
             <Border Grid.Column="4" Grid.Row="0" Grid.RowSpan="5">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -172,17 +134,24 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition />
+                        <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="25"/>
-                    <Border Grid.Column="2" Grid.Row="1" Margin="50,10,10,380" >
-                        <Button Content="DONE" Background="MediumSeaGreen" TextElement.FontSize ="30"/>
+                    <Label Grid.Row="0" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="3" Content="Order #" TextElement.FontSize ="23"/>
+                    <Label Name="orderNum4" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Content="123" Margin="10,50,0,50" HorizontalAlignment="Left" VerticalAlignment="Top" TextElement.FontSize ="40"/>
+                    <DataGrid AutoGenerateColumns="False" Grid.Row="0" Grid.Column="1" Grid.RowSpan="5" Grid.ColumnSpan="3" Margin="10,140,10,10" Name="dataGrid4" TextElement.FontSize="18">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn x:Name="orderProducts4" Binding="{Binding}"  Width="430" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Border Grid.Column="2" Grid.Row="0" Margin="0,10,10,80">
+                        <Button Content="DONE" Background="MediumSeaGreen"  TextElement.FontSize ="30"/>
                     </Border>
                 </Grid>
             </Border>
-            <!--<Button Content="Button" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" Grid.RowSpan="2" Height="23" HorizontalAlignment="Left" Margin="87,10,0,0" Name="button1" VerticalAlignment="Top" Width="75" />-->
-        </Grid>
+        </Grid>              
     </ScrollViewer>
 </Window>
