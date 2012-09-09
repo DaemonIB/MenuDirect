@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MenuDirectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MenuDirectModelStoreContainer">
+    <EntitySet Name="Category" EntityType="MenuDirectModel.Store.Category" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="order" EntityType="MenuDirectModel.Store.order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="orderList" EntityType="MenuDirectModel.Store.orderList" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="product" EntityType="MenuDirectModel.Store.product" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="categoryID" />
+    </Key>
+    <Property Name="categoryName" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="categoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="orderNumber" />
+    </Key>
+    <Property Name="orderDelivered" Type="bit" Nullable="false" />
+    <Property Name="cookingCompleted" Type="bit" Nullable="false" />
+    <Property Name="orderNumber" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="chefID" Type="int" />
+  </EntityType>
+  <EntityType Name="orderList">
+    <Key>
+      <PropertyRef Name="orderLIstID" />
+    </Key>
+    <Property Name="orderLIstID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="prodID" Type="int" Nullable="false" />
+    <Property Name="orderNumber" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="prodID" />
+    </Key>
+    <Property Name="prodID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="prodName" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="prodPrice" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="prodCategoryName" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <Function Name="getCatName" ReturnType="varchar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="num" Type="int" Mode="In" />
+  </Function>
+</Schema>

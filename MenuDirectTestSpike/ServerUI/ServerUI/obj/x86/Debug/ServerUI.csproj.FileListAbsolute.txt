@@ -1,0 +1,79 @@
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\trice\Documents\QUARTER 4\NET Project\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nnickerson\Desktop\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\ServerUI.exe.config
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\MenuDirectTestSpike.dll
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\EntityFramework.dll
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\MenuDirectTestSpike.pdb
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\bin\Debug\EntityFramework.xml
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.csprojResolveAssemblyReference.cache
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.lref
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.csproj.GenerateResource.Cache
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\Siegfre\Downloads\CHANGE CHANGE\CHANGE CHANGE\UI\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\trice\Desktop\ServerUI\ServerUI\bin\Debug\ServerUI.exe.config
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb
+C:\Users\trice\Desktop\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\trice\Desktop\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\trice\Desktop\ServerUI\ServerUI\bin\Debug\EntityFramework.xml
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.lref
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Desktop\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\bin\Debug\ServerUI.exe.config
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\bin\Debug\ServerUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\bin\Debug\ServerUI.pdb
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\bin\Debug\EntityFramework.xml
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI_MarkupCompile.lref
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI.g.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI.Properties.Resources.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\ServerUI\ServerUI\obj\x86\Debug\ServerUI.pdb

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MenuDirectModelStoreContainer" CdmEntityContainer="MenuDirectEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="MenuDirectModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          <ScalarProperty Name="categoryID" ColumnName="categoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="MenuDirectModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="chefID" ColumnName="chefID" />
+          <ScalarProperty Name="orderDelivered" ColumnName="orderDelivered" />
+          <ScalarProperty Name="cookingCompleted" ColumnName="cookingCompleted" />
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderLists">
+      <EntityTypeMapping TypeName="MenuDirectModel.orderList">
+        <MappingFragment StoreEntitySet="orderList">
+          <ScalarProperty Name="orderLIstID" ColumnName="orderLIstID" />
+          <ScalarProperty Name="prodID" ColumnName="prodID" />
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="MenuDirectModel.product">
+        <MappingFragment StoreEntitySet="product">
+          <ScalarProperty Name="prodID" ColumnName="prodID" />
+          <ScalarProperty Name="prodName" ColumnName="prodName" />
+          <ScalarProperty Name="prodPrice" ColumnName="prodPrice" />
+          <ScalarProperty Name="prodCategoryName" ColumnName="prodCategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

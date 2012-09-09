@@ -1,0 +1,263 @@
+﻿<Window x:Class="AdminUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Admin" 
+        xmlns:dg="http://schemas.microsoft.com/wpf/2008/toolkit"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:local="clr-namespace:AdminUI"
+        ResizeMode="NoResize" WindowState="Maximized"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}" mc:Ignorable="d" Loaded="Window_Loaded">
+    <Window.Resources>
+        <CollectionViewSource x:Key="productsViewSource" />
+        <CollectionViewSource x:Key="categoriesViewSource" />
+    </Window.Resources>
+    <Grid>
+        <Grid.Resources>
+
+            <Style TargetType="{x:Type Border}">
+                <Setter Property= "Margin" Value="7"/>
+                <Setter Property="BorderBrush" Value="DarkGray" />
+                <Setter Property="BorderThickness" Value="3" />
+                <Setter Property="CornerRadius" Value="9" />
+            </Style>
+            <Style TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="Azure" />
+                <Setter Property="FontSize" Value="22" />
+            </Style>
+            <Style TargetType="{x:Type TabItem}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TabItem}">
+                            <Grid>
+                                <Border 
+                                 Name="Border"
+                                 BorderBrush="Black" 
+                                 BorderThickness="1" 
+                                 CornerRadius="6,6,0,0" >
+                                    <ContentPresenter x:Name="ContentSite"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Center"
+                                       ContentSource="Header"
+                                       Margin="12,2,12,2"/>
+                                </Border>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter TargetName="Border" Property="Background" Value="RosyBrown" />
+                                </Trigger>
+                                <Trigger Property="IsSelected" Value="False">
+                                    <Setter TargetName="Border" Property="Background" Value="azure" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style  TargetType="{x:Type TabControl}">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type TabControl}">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <TabPanel 
+                                 Margin="0,0,4,-1" 
+                                 IsItemsHost="True"
+                                 Background="Transparent" />
+                                <Border 
+                                 Grid.Row="1"
+                                 BorderBrush="Black" 
+                                 BorderThickness="1" 
+                                 CornerRadius="0, 12, 12, 12" >
+                                    <Border.Background>
+                                        <LinearGradientBrush>
+                                            <GradientStop Color="RosyBrown" Offset="0" />
+                                            <GradientStop Color="White" Offset="2" />
+                                        </LinearGradientBrush>
+                                    </Border.Background>
+                                    <ContentPresenter ContentSource="SelectedContent" />
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- add -->
+        <Border Grid.Column="0" Grid.Row="1">
+            <Button Content="Add" Name="addButton" Click="addButton_Click"/>
+        </Border>
+        <!-- delete -->
+        <Border Grid.Column="0" Grid.Row="2">
+            <Button Content="Delete" Name="deleteButton" Click="deleteButton_Click"/>
+        </Border>
+        <!-- update -->
+        <Border Grid.Column="0" Grid.Row="3">
+            <Button Content="Update" Name="updateButton" Click="updateButton_Click"/>
+        </Border>
+        <!-- Cash Out -->
+        <Border Grid.Column="0" Grid.Row="4">
+            <Button Content="Cash Out" Name="cashOutButton" Click="cashOutButton_Click"/>
+        </Border>
+        <!-- View Sales -->
+        <Border Grid.Column="0" Grid.Row="5">
+            <Button Content="View Sales" Name="viewSalesButton" Click="viewSalesButton_Click"/>
+        </Border>
+        <!-- Database -->
+
+
+        <TabControl FontSize="22" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="6" Grid.RowSpan="6" Name="tabControl1" Margin="15">
+            <TabItem Header="Products" Name="tabProducts" Height="35">
+                <DataGrid  IsReadOnly="True" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource productsViewSource}}" Margin="25" Name="productDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="Select" Width="3*" x:Name="selectedItems">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox Checked ="Check" Unchecked="Uncheck" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="prodIDColumn" Binding="{Binding Path=prodID}" Header="ID" Width="5*"/>
+                        <DataGridTextColumn x:Name="prodNameColumn" Binding="{Binding Path=prodName}" Header="Name" Width="10*" />
+                        <DataGridTextColumn x:Name="prodPriceColumn" Binding="{Binding Path=prodPrice}" Header="Price" Width="5*" />
+                        <DataGridTextColumn x:Name="prodCategoryNameColumn" Binding="{Binding Path=prodCategoryName}" Header="Category" Width="7*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Categories" Name="tabCategories" Height="35">
+                <DataGrid  IsReadOnly="True" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding Source={StaticResource categoriesViewSource}}" Margin="25" Name="categoriesDataGrid"  RowDetailsVisibilityMode="VisibleWhenSelected">
+        
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Header="Select" Width="1*" x:Name="selectedCategories">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox Checked ="CheckCat" Unchecked="UncheckCat" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTextColumn x:Name="categoryNameColumn" Binding="{Binding Path=categoryName}" Header="Name" Width="10*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+
+
+        <!-- ADD -->
+        <Grid Grid.Column="1" Grid.RowSpan="7" Grid.ColumnSpan="7" x:Name="AddInput" Visibility="Collapsed" >
+            <Grid Background="Black" Opacity="0.7"></Grid>
+            <Border
+            MinWidth="450"
+            Background="Cornsilk" 
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            HorizontalAlignment="Center" 
+            Margin="0,70,0,0"
+            VerticalAlignment="Top">
+                <StackPanel >
+                    <TextBlock Margin="15" Text="Add Information:" FontWeight="Bold" FontSize="18"/>
+                    <Label Visibility="Collapsed" Name="databaseAdd" Content="{Binding ElementName=tabControl1, Path=SelectedItem.Header}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <DataGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" 
+                                  Margin="15" Name="addProductDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected"  Visibility="Collapsed" CanUserAddRows="True">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn x:Name="prodNameColumn1" Binding="{Binding One}" Header="Name" Width="250"/>
+                                <DataGridTextColumn x:Name="prodPriceColumn1" Binding="{Binding Two}" Header="Price" Width="100" />
+                                <DataGridTextColumn x:Name="prodCategoryNameColumn1" Binding="{Binding Three}" Header="Category" Width="200"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <DataGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" 
+                                  Margin="15" Name="addCategoryDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Visibility="Collapsed">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn x:Name="categoryName" Binding="{Binding Four}" Header="Name" Width="500" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <Button x:Name="AcceptAdd" Margin="15,20,10,20" Padding="5,0,5,3" Content="Accept" FontSize="17" Background="Azure" Click="acceptAddButton_Click"/>
+                        <Button x:Name="CancelAdd" Margin="10,20,15,20" Padding="5,0,5,3" Content="Cancel" FontSize="17" Background="Azure" Click="cancelAddButton_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <!--UPDATE-->
+        <Grid Grid.Column="1" Grid.RowSpan="7" Grid.ColumnSpan="7" x:Name="UpdateInput" Visibility="Collapsed" >
+            <Grid Background="Black" Opacity="0.7"/>
+            <Border
+            MinWidth="500"
+            Background="Cornsilk" 
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            HorizontalAlignment="Center" 
+            Margin="0,70,0,0"
+            VerticalAlignment="Top">
+                <StackPanel>
+                    <TextBlock Margin="15" Text="Update Information:" FontWeight="Bold" FontSize="18"/>
+                    <Label Name="databaseUpdate" Content="{Binding ElementName=tabControl1, Path=SelectedItem.Header}" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1"/>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <DataGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" 
+                                   Margin="15" Name="updateProductDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Visibility="Collapsed">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn x:Name="prodNameColumn2" Binding="{Binding prodName}" Header="Name" Width="250"/>
+                                <DataGridTextColumn x:Name="prodPriceColumn2" Binding="{Binding prodPrice}" Header="Price" Width="100" />
+                                <DataGridTextColumn x:Name="prodCategoryNameColumn2" Binding="{Binding prodCategoryName}" Header="Category" Width="200"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <DataGrid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="17" AutoGenerateColumns="False" EnableRowVirtualization="True" 
+                                   Margin="15" Name="updateCategoryDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Visibility="Collapsed">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Binding="{Binding categoryName}" x:Name="categoryName2" Header="Name" Width="500" />
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+                        <Button x:Name="AcceptUpdate" Margin="15,20,10,20" Padding="5,0,5,3" Content="Accept" FontSize="17" Background="Azure" Click="acceptUpdateButton_Click"/>
+                        <Button x:Name="CancelUpdate" Margin="10,20,15,20" Padding="5,0,5,3" Content="Cancel" FontSize="17" Background="Azure" Click="cancelUpdateButton_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+        
+        
+    </Grid>
+</Window>

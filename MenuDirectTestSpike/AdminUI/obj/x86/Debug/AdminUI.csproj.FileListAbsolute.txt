@@ -1,0 +1,103 @@
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\trice\Documents\GitHub\MenuDirect\AdminUI\AdminUI\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\bin\Debug\MenuDirect.exe
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\bin\Debug\MenuDirect.pdb
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\nnickerson\Desktop\AdminUI\AdminUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.csprojResolveAssemblyReference.cache
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\MenuDirectTestSpike.exe
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\EntityFramework.dll
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\MenuDirectTestSpike.pdb
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\EntityFramework.xml
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.csproj.GenerateResource.Cache
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\Siegfre\Desktop\AdminUI\AdminUI\AdminUI\bin\Debug\AdminUI.exe.config
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe.config
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\MenuDirectTestSpike.dll
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.dll
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\MenuDirectTestSpike.pdb
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.xml
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.csprojResolveAssemblyReference.cache
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\Siegfre\Documents\Visual Studio 2010\Projects\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.csproj.GenerateResource.Cache
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe.config
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\MenuDirectTestSpike.dll
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.dll
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\MenuDirectTestSpike.pdb
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.xml
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Desktop\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe.config
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.pdb
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.exe
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\AdminUI.pdb
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.dll
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\bin\Debug\EntityFramework.xml
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\App.g.cs
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.cache
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI_MarkupCompile.lref
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\MainWindow.baml
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.g.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\AdminUI.Properties.Resources.resources
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\trice\Desktop\MenuDirect.git\trunk\MenuDirectTestSpike\MenuDirectTestSpike\AdminUI\obj\x86\Debug\GenerateResource.write.1.tlog

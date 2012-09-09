@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MenuDirectModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="MenuDirect" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="products" EntityType="MenuDirectModel.product" />
+    <EntitySet Name="Categories" EntityType="MenuDirectModel.Category" />
+    <AssociationSet Name="productCategoryName" Association="MenuDirectModel.productCategoryName">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+    <EntitySet Name="orders" EntityType="MenuDirectModel.order" />
+    <EntitySet Name="orderLists" EntityType="MenuDirectModel.orderList" />
+    <AssociationSet Name="prodID" Association="MenuDirectModel.prodID">
+      <End Role="product" EntitySet="products" />
+      <End Role="orderList" EntitySet="orderLists" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="prodID" />
+    </Key>
+    <Property Name="prodID" Type="Int32" Nullable="false" />
+    <Property Name="prodName" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="prodPrice" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Type="String" Name="prodCategoryName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Category" Relationship="MenuDirectModel.productCategoryName" FromRole="product" ToRole="Category" />
+    <NavigationProperty Name="orderLists" Relationship="MenuDirectModel.prodID" FromRole="product" ToRole="orderList" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="categoryName" />
+    </Key>
+    <Property Type="String" Name="categoryName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="products" Relationship="MenuDirectModel.productCategoryName" FromRole="Category" ToRole="product" />
+    <Property Type="Int32" Name="Num" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <Association Name="productCategoryName">
+    <End Type="MenuDirectModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="MenuDirectModel.product" Role="product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="categoryName" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="prodCategoryName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="orderNumber" />
+    </Key>
+    <Property Type="Boolean" Name="orderDelivered" Nullable="false" />
+    <Property Type="Boolean" Name="cookingCompleted" Nullable="false" />
+    <Property Type="Int32" Name="orderNumber" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="orderList">
+    <Key>
+      <PropertyRef Name="orderLIstID" />
+    </Key>
+    <Property Type="Int32" Name="orderLIstID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="prodID" Nullable="false" />
+    <Property Type="Int32" Name="orderNumber" Nullable="false" />
+    <NavigationProperty Name="product" Relationship="MenuDirectModel.prodID" FromRole="orderList" ToRole="product" />
+  </EntityType>
+  <Association Name="prodID">
+    <End Type="MenuDirectModel.product" Role="product" Multiplicity="1" />
+    <End Type="MenuDirectModel.orderList" Role="orderList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="prodID" />
+      </Principal>
+      <Dependent Role="orderList">
+        <PropertyRef Name="prodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
